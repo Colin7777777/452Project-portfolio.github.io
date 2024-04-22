@@ -1,0 +1,315 @@
+body 
+/*index*/
+
+{
+    font-family: Arial, sans-serif;
+}
+.header-title {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+.navbar {
+    background-color: #0019bd;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.navbar img {
+    height: 50px;
+    margin-right: 10px;
+}
+.navbar a {
+    font-size: 18px; /* Resize the font */
+    font-family: 'Times New Roman', Times, serif; /* Adjust font */
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.container {
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0; /* Remove the top and bottom margins of the container */
+}
+.text-box,
+.image-box {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0; /* Remove left and right margins between boxes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-box p {
+    font-size: 40px; /* Set the font size to 18 pixels */  
+font-family: Arial, sans-serif; /* Set the font family */ 
+    margin: 0; /* Make sure there is no extra space inside the text either */
+}
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 768px) {
+    .text-box, .image-box {
+        width: 100%;
+    }
+}
+.third-row-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Change here to flex-start */
+    align-items: center;
+    background-color: #0019bd;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.third-row-box p {
+    margin: 0;
+    text-align: left; /* Make sure the text is left justified */
+}
+
+.third-row-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px;
+    display: flex;
+    align-self: flex-end;
+}
+.third-row-button:hover {
+    background-color: #0056b3;
+}
+.fourth-row-container {
+    display: flex;
+    padding: 20px;
+}
+
+.fourth-row-image-box {
+    flex-basis: 30%; /* Adjust the width of the image as needed */
+    display: flex;
+    align-items: center;
+}
+.fourth-row-image-box img {
+    width: 30%;
+    height: auto;
+    max-width: 200px; /* Adjust the maximum image width as required */
+}
+
+.fourth-row-text-blocks {
+    flex-basis: 70%; /* Adjust the width of the text block as required */
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.fourth-row-text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 20px; /* Left and right inside margins */
+}
+.fourth-row-text-block p {
+    margin-bottom: 10px; /* Distance between lines of text */
+}
+
+
+main {
+    flex: 1; /* 让主要内容区域能够占据剩余空间 */
+}
+
+.footer {
+    margin-top: auto; /* 这会让.footer 自动移动到底部 */
+    color: white;
+    background-color: #0019bd;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* customer support */ 
+
+
+.second-row-grid {  
+    display: grid;  
+    /* Use grid layout for the second row */  
+    grid-template-columns: repeat(3, 1fr);  
+    /* Define three equal columns in the grid */  
+    grid-gap: 10px;  
+    /* Add a gap between the grid items */  
+    margin-top: 20px;   
+    /* Add a top margin to the grid */  
+}  
+
+.grey-box {  
+    color:#ffffff;
+    background-color: #43a8b4;  
+    /* Set the background color for the grey boxes */  
+    padding: 100px;  
+    /* Add padding to the grey boxes */  
+    text-align: center;  
+    /* Center the text within the grey boxes */  
+    border-radius: 5px;  
+    /* Add rounded corners to the grey boxes */  
+    font-weight: bold;  
+    /* Set the font weight for the text in the grey boxes */  
+}  
+
+
+/* product portfolio */ 
+  
+/* Define the styles for the navigation bar */  
+
+  
+/* Define the styles for the container that holds the boxes */  
+.boxes-container {  
+    display: flex; /* Display the boxes horizontally */  
+    flex-direction: column; /* Arrange the boxes vertically */  
+    align-items: center; /* Vertically align the boxes */  
+    margin-top: 20px; /* Add a top margin of 20 pixels */  
+}  
+  
+/* Define the styles for the container that holds images */  
+.image-box {  
+    width: 100%; /* Set the width to 100% */  
+    display: flex; /* Display the images horizontally */  
+    flex-wrap: nowrap; /* Prevent the images from wrapping to a new line */  
+    overflow-x: auto; /* Enable horizontal scrolling if necessary */  
+    white-space: nowrap; /* Prevent whitespace wrapping */  
+    margin-bottom: 20px; /* Add a bottom margin of 20 pixels */  
+}  
+  
+/* Define the styles for images within the image-box container */  
+.image-box img {  
+    width: calc(100% / 4); /* Set the width to one-quarter of the container width */  
+    height: auto; /* Set the height to auto to maintain aspect ratio */  
+    object-fit: cover; /* Ensure the image covers the entire container */  
+    margin-right: 10px; /* Add a right margin of 10 pixels */  
+}  
+  
+
+
+
+/* blog */  
+/* Define styles for the navbar */  
+
+  
+/* Define styles for the main title */  
+.title {  
+    font-size: 24px; /* Set the font size to 24 pixels */  
+    font-weight: bold; /* Make the text bold */  
+    font-family: Arial, sans-serif; /* Set the font family */  
+    text-align: center; /* Center the text */  
+    margin: 20px 0; /* Add top and bottom margins of 20 pixels */  
+}  
+  
+/* Define styles for the content text */  
+.content-text {  
+    font-size: 18px; /* Set the font size to 18 pixels */  
+    font-family: Arial, sans-serif; /* Set the font family */  
+    color: #333; /* Set the text color to a dark gray */  
+    text-align: center; /* Center the text */  
+    margin: 10px 0; /* Add top and bottom margins of 10 pixels */  
+}  
+  
+/* Define styles for the calligraphy text */  
+.calligraphy {  
+    font-size: 16px; /* Set the font size to 16 pixels */  
+    font-family: 'KaiTi', 'SimKai', '楷体', 'serif'; /* Set the font family to KaiTi or similar serif fonts */  
+    color: #333; /* Set the text color to a dark gray */  
+    text-align: left; /* Align the text to the left */  
+    margin: 10px 0; /* Add top and bottom margins of 10 pixels */  
+    font-weight: bold; /* Make the text bold */  
+}  
+  
+
+
+
+/* about us */ 
+
+  
+/* Define styles for the content section */  
+.content-section {  
+    display: flex; /* Display the content section using flexbox */  
+    flex-direction: column; /* Arrange the items vertically */  
+    align-items: center; /* Vertically align the items */  
+    margin-top: 20px; /* Add a top margin of 20 pixels */  
+}  
+  
+/* Define styles for the first box */  
+.first-box {  
+    display: flex; /* Display the first box using flexbox */  
+    width: 100%; /* Set the width to 100% */  
+    margin-bottom: 20px; /* Add a bottom margin of 20 pixels */  
+    margin-left: 0; /* Remove any left margin */  
+}  
+  
+/* Define styles for the text part within the first box */  
+.first-box .text-part {  
+    font-size: 18px; /* Set the font size to 18 pixels */  
+    font-family: Arial, sans-serif; /* Set the font family */  
+    color: #333; /* Set the text color to a dark gray */  
+    line-height: 1.5; /* Set the line height */  
+}  
+  
+/* Define styles for the image within the first box */  
+.first-box img {  
+    width: 200px; /* Set the width to 200 pixels */  
+    height: 200px; /* Set the height to 200 pixels */  
+    margin-left: 20px; /* Add a left margin of 20 pixels */  
+}  
+  
+/* Define styles for the second box */  
+.second-box {  
+    width: 100%; /* Set the width to 100% */  
+    max-width: 800px; /* Set the maximum width to 800 pixels */  
+    text-align: left; /* Align the text to the left */  
+    
+}  
+  
+/* Define styles for the calligraphy text within the second box */  
+.second-box .calligraphy {  
+    font-size: 16px; /* Set the font size to 16 pixels */  
+    font-family: 'KaiTi', 'SimKai', '楷体', 'serif'; /* Set the font family to KaiTi or similar serif fonts */  
+    color: #000000; /* Set the text color to a dark gray */  
+    margin-bottom: 10px; /* Add a bottom margin of 10 pixels */  
+    background-color: #ffffff;
+}  
+
+.image-description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-description-container p {
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+    color: #000000; 
+    padding: 5px 0; 
+}
