@@ -1,3 +1,4 @@
+/*173190707 Colin Gu Xiaokang*/
 body 
 /*index*/
 
@@ -367,3 +368,22 @@ main {
     text-decoration: none;
     cursor: pointer;
 }
+
+.second-row-grid {
+    position: relative; 
+  }
+  
+  .grey-box {
+    position: relative;
+    padding: 20px; 
+    margin: 10px; 
+  }
+  
+  .grey-box:not(:last-child):after { 
+    content: "→"; 
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%); 
+    right: -15px; 
+    color: #666; 
+  }
